@@ -3,7 +3,7 @@
         <id>https://badchoiceskenny.github.io/proyectokenneth/</id>
         <title>Software</title>
         <updated>2023-06-23T15:00:00Z</updated>
-        <link rel="alternate" href="https://badchoiceskenny.github.io/proyectokenneth/atom.xml"/>
+        <link rel="self" href="https://badchoiceskenny.github.io/proyectokenneth/atom.xml"/>
         <author>
         <name>Kenneth Miró García</name>
         <email>kennethphysix@gmail.com</email>
