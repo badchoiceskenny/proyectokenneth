@@ -114,3 +114,31 @@ iframe {
 #home:hover {
   filter: invert(90%);
 }
+
+/* Iconos rss y atom */
+
+#atom {
+  height: auto;
+  max-width: 30px;
+  position: absolute;
+  top: 9vh;
+  left: 2vw;
+  filter: drop-shadow(100%);
+}
+
+#atom:hover {
+  filter: invert(90%);
+}
+
+#rss {
+  height: auto;
+  max-width: 30px;
+  position: absolute;
+  top: 15vh;
+  left: 2vw;
+  filter: drop-shadow(100%);
+}
+
+#rss:hover {
+  filter: invert(90%);
+}
