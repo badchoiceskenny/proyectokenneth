@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "styles/estilo.css">
+<title>Software</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("article").hide()
+  $("iframe").hide()
+  $("#menuwindows").click(function(){
+    $("article").hide()
+    $("#windows").show()
+  });
+  $("#menuubuntu").click(function(){
+    $("article").hide()
+    $("#ubuntu").show();
+  });
+  $("#menucopias").click(function(){
+    $("article").hide()
+    $("#copias").show();
+  });
+  $("#menuubuofimatica").click(function(){
+    $("iframe").hide()
+    $("#ubuofimatica").show();
+  });
+  $("#menuubuantivirus").click(function(){
+    $("iframe").hide()
+    $("#ubuantivirus").show();
+  });
+  $("#menuuburecuperacion").click(function(){
+    $("iframe").hide()
+    $("#uburecuperacion").show();
+  });
+    $("#menuubuportable").click(function(){
+    $("iframe").hide()
+    $("#ubuportable").show();
+  });
+  $("#menuwinofimatica").click(function(){
+    $("iframe").hide()
+    $("#winofimatica").show();
+  });
+  $("#menuwinantivirus").click(function(){
+    $("iframe").hide()
+    $("#winantivirus").show();
+  });
+  $("#menuwinrecuperacion").click(function(){
+    $("iframe").hide()
+    $("#winrecuperacion").show();
+  });
+    $("#menuwinportable").click(function(){
+    $("iframe").hide()
+    $("#winportable").show();
+  });
+  $("#menucopialocal").click(function(){
+    $("iframe").hide()
+    $("#copialocal").show();
+  });
+    $("#menucopiaremota").click(function(){
+    $("iframe").hide()
+    $("#copiaremota").show();
+  });
+    $("#home").click(function(){
+    $("iframe").hide()
+    $("article").hide();
+  });
+});
+</script>
+</head>
+<body>
+<div id="contenedor">
+<div id="espaciado">
+<header>
+  <h2 style="color: #09f;">Bienvenido</h2>
+  <p>Elija una sección para ver sus contenidos</p>
+</header>
+<img alt="HOME" src="pages/imagenes/home.png" id="home" title="Volver a Inicio"/>
+<section>
+  <nav>
+    <ul>
+      <li id="menuwindows"><a href="#windows">Windows</a></li>
+      <li id="menuubuntu"><a href="#ubuntu">Ubuntu</a></li>
+      <li id="menucopias"><a href="#copias">Copias de seguridad</a></li>
+    </ul>
+  </nav>
+  <article id="windows">
+    <nav>
+      <ul>
+        <li id="menuwinofimatica"><a href="#winofimatica">Ofimatica</a></li>
+        <li id="menuwinantivirus"><a href="#winantivirus">Antivirus</a></li>
+        <li id="menuwinrecuperacion"><a href="#winrecuperacion">Software de recuperación</a></li>
+        <li id="menuwinportable"><a href="#winportable">Software portable</a></li>
+      </ul>
+    </nav>
+    <iframe id="winofimatica" style="width:100%; border:none"src="pages/winofimatica.html"></iframe>
+    <iframe id="winantivirus" style="width:100%; border:none"src="pages/winantivirus.html"></iframe>
+    <iframe id="winrecuperacion" style="width:100%; border:none"src="pages/winrecuperacion.html"></iframe>
+    <iframe id="winportable" style="width:100%; border:none"src="pages/winportable.html"></iframe>
+  </article>
+  <article id="ubuntu">
+    <nav>
+      <ul>
+        <li id="menuubuofimatica"><a href="#ubuofimatica">Ofimatica</a></li>
+        <li id="menuubuantivirus"><a href="#ubuantivirus">Antivirus</a></li>
+        <li id="menuuburecuperacion"><a href="#uburecuperacion">Software de recuperación</a></li>
+        <li id="menuubuportable"><a href="#ubuportable">Software portable</a></li>
+      </ul>
+    </nav>
+    <iframe id="ubuofimatica" style="width:100%; border:none"src="pages/ubuofimatica.html"></iframe>
+    <iframe  id="ubuantivirus" style="width:100%; border:none"src="pages/ubuantivirus.html"></iframe>
+    <iframe  id="uburecuperacion" style="width:100%; border:none"src="pages/uburecuperacion.html"></iframe>
+    <iframe  id="ubuportable" style="width:100%; border:none"src="pages/ubuportable.html"></iframe>
+  </article>
+  <article id="copias">
+    <nav>
+      <ul>
+        <li id="menucopialocal"><a href="#copialocal">Copias en local</a></li>
+        <li id="menucopiaremota"><a href="#copiaremota">Copias en remoto</a></li>
+      </ul>
+    </nav>
+    <iframe  id="copialocal" style="width:100%; border:none"src="pages/copialocal.html"></iframe>
+    <iframe  id="copiaremota" style="width:100%; border:none"src="pages/copiaremota.html"></iframe>  </article>
+</section>
+</div>
+
+<footer>
+  <p>Kenneth Miró, 2023</p>
+  <p>1º ASIR, Lenguajes de Marcas</p>
+  <p>IES Medina Azahara</p>
+</footer>
+</div>
+</body>
+</html>
