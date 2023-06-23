@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "estilo.css">
+</head>
+<body>
+   <h1>PROGRAMAS PORTABLES EN UBUNTU</h1>
+   <h2>DEFINICIÓN</h2>
+    <p>Un programa portable es un programa que tiene todos sus componentes y archivos necesarios en una única carpeta. Realmente muchos programas no portables se pueden usar así, si realizas la instalación en una localizada y la mueves por allí en algo como una unidad USB, por ejemplo, pero no es recomendable: el programa podría estar cogiendo archivos de configuración de otro lugar y al trasladarlo de ordenador se pierdan, aunque puedas mover la carpeta dentro del mismo ordenador sin que nada se rompa.</p>
+    <p>Tampoco varían los requisitos técnicos de un programa portable; como mucho varían en tamaño.</p>
+    <p>Así que, ¿cómo consigo un programa portable? Pues es bien sencillo:</p>
+    <ul>
+      <li>El programa tiene versión portable en su página web (Generalmente un archivo comprimido)</li>
+      <li>El programa tiene opción de instalarse en versión portable en su instalador.</li>
+      <li>El programa no tiene versión portable, aunque, como ya he dicho, muchos pueden desplazarse localmente dentro de la máquina sin problemas.</li>
+    </ul>
+    <h2>COMPARATIVA</h2>
+    <div>
+      <table>
+         <tr>
+            <th id="doscol">PORTABLE</th>
+            <th id="doscol">NO PORTABLE</th>
+         </tr>
+         <tr>
+            <td>
+               <ul>
+                  <li>Se puede llevar de un ordenador a otro manteniendo gran parte de la configuración</li>
+                  <li>No se realiza acceso directo normalmente</li>
+                  <li>Si no se ha realizado acceso directo tienes que abrir la carpeta y buscar el ejecutable</li>
+                  <li>En mi experiencia son más propensos a errores</li>
+               </ul>
+            </td>
+            <td>
+               <ul>
+                  <li>Más cómodos de usar</li>
+                  <li>Los ficheros de configuración y otros tantos más suelen esparcidos por el ordenador, dificultando su traspaso de un pc a otro</li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+    </div>
+    <h2>PROBLEMATICA DEL SOFTWARE PORTABLE EN UBUNTU</h2>
+    <p>Por desgracia, no hay software portable en ubuntu. Hay una adaptación de algunos programas a modo portable, pero corren a cuenta de la comunidad y no funcionan correctamente, además de ser demasiado costosos de instalar, por lo que los desaconsejo altamente ya que después de una mucho más extensa instalación nada asegura que vayan a funcionar. En mi caso no conseguí hacerlos funcionar de ninguna manera, lo que parece ser algo común.</p>
+    <p>Este nuevo método comunitario de software portable se llama <a href="https://appimage.org/" target="_blank" rel="noopener">AppImage</a>, y en principio es tan simple como descargar un archivo .appimage, darle permisos de ejecución y ejecutarlo como un programa desde la terminal (ejectuar <i>chmod a+x nombreprograma.appimage</i> seguido de <i>./nombreprograma.appimage</i>). Y digo debería porque, como digo, es muy frecuente que no lo haga.</p>
+    <img alt="Error al cargar: imagen de la web de AppImage" src="imagenes/appimage1.png"/>
+    <img alt="Error al cargar: imagen del hub de software AppImage" src="imagenes/appimage2.png"/>
+    <p>Voy a dejar el enlace a su página web y un enlace a una <a href="https://www.appimagehub.com/" target="_blank" rel="noopener">colección de programas AppImage</a> para quien quiera probar suerte, yo no la tuve y por eso no puedo continuar con una guía más detallada. Antes de cerrar quiero recalcar que <b>no existe el soporte oficial por los desorrallores de los sistemas operativos a AppImage, aunque los desarrolladores de ciertos programas sí que han adaptado personalmente su software.</b></p>
+   </article>
+   </article>
+   </article>
+</section>
+</body>
+</html>

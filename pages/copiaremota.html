@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "estilo.css">
+</head>
+<body>
+   <h1>COPIAS REMOTAS CON CLONEZILLA</h1>
+    <p>Para realizar las copias remotas usaremos el programa <i>Clonezilla</i>, una distribución de linux cuya finalidad es gestionar copias de seguridad.</p>
+    <p>Pero antes, ¿Qué es una copia remota? Pues es una copia realizada desde el origen a un dispositivo conectado o situado en otro ordenador, preferiblemente si está en la misma red para facilitar el trabajo.</p>
+    <p>Para realizar esta copia utilizaremos el método SSH, aunque hay otros como conectar el PC de origen a un servidor que será el destino o usar otros protocolos diferentes. Pero de todos, el más sencillo es SSH.</p>
+    <p>Ahora que sabemos esto, procedamos con el manual.</p>
+
+    <h2>PASO 0: CREAR MEDIO</h2>
+    <p>El paso previo no podía ser otro que crear el medio de instalación, obviamente. Si usamos Windows usaremos la aplicación rufus. Tendremos que tener un resultado similar al siguiente, pero con la diferencia de que en lugar de la iso de windows usaremos la iso de clonezilla. En dispositivo seleccionamos el USB a montar.</p>
+    <img alt="Error al cargar: rufus" src="imagenes/rufus.png"/>
+
+    <h2>PASO 1: ARRANQUE DEL MEDIO</h2>
+    <p>Primero arrancamos Clonezilla. Para ello enchufamos el USB, reinciamos la máquina y pulsamos la tecla que permite seleccionar el arranque, normalmente F2, F8 o F9, pero para estar más seguros siempre puedes pulsar ESC y acceder desde la BIOS/UEFI.</p>
+    <p>Ahora, seleccionamos la opción por defecto, la primera de todas. Después nos preguntará el idioma y la distribución del teclado. Son pasos sencillos, pero tediosos. Elegiremos el idioma que prefiramos y en cuanto a la distribución pulsaremos más habitualmente Change, ya que la distribución por defecto es el teclado americano.</p>
+    <img alt="Error al cargar: Clonezilla - idioma" src="imagenes/copiasremotas/cl01.jpg"/>
+    <img alt="Error al cargar: Clonezilla - distribución del teclado" src="imagenes/copiasremotas/cl02.jpg"/>
+    <p>En mi caso, que uso un portátil antiguo y quiero poner la distribución de teclado en español de España genérico, dejaré el teclado de PC genérico que tiene seleccionado al princpio, y en la siguiente ventana pulsaré <i>Otro</i> abajo del todo, ahora buscaré <i>Español</i>, lo seleccionaré y luego seleccionaré la distribución española que quiera.</p>
+    <img alt="Error al cargar: Clonezilla - tipo de teclado" src="imagenes/copiasremotas/cl03.jpg"/>
+    <img alt="Error al cargar: Clonezilla - idioma del teclado" src="imagenes/copiasremotas/cl04.jpg"/>
+    <p>A continuación nos pedirá sustitutos de teclas. Si no tenemos en el teclado la tecla que pide, buscaremos una alternativa de entre las opciones que nos da, y si la tenemos pues seleccionamos esa misma tecla, ya que aparece entre las opciones.</p>
+    <img alt="Error al cargar: Clonezilla - teclas especiales" src="imagenes/copiasremotas/cl05.jpg"/>
+    <p>Cuando acabemos con eso, nos dará la opción de entrar a Clonezilla, que es el modo gráfico, o hacer el proceso mediante comandos. Lo segundo sería la mejor opción, pero ya que no tenemos los conocimientos adecuados, iremos a <i>Start_Clonezilla</i>.</p>
+    <p>Ahora en la siguiente ventana nos salen muchas opciones. Son para elegir lo que queremos hacer. Ya que queremos hacer una copia del disco en otro disco distinto, aunque esté en otra máquina, elegiremos device-image.</p>
+    <img alt="Error al cargar: Clonezilla - modo" src="imagenes/copiasremotas/cl06.jpg"/>
+
+    <h2>PASO 2: ELEGIR TIPO DE COPIA Y DESTINO</h2>
+    <p>Ya que queremos hacer la copia en remoto, es decir, del disco duro de nuestro PC a otro lugar en otra máquina, una carpeta del escritorio en mi caso (aunque bien podría ser un disco duro dedicado para ello en ese PC), la opción será <i>ssh_server</i>.</p>
+    <img alt="Error al cargar: Clonezilla - modo SSH" src="imagenes/copiasremotas/cl07.jpg"/>
+    <p>Nos pedirá ahora la IP del destino. La introducimos.</p>
+    <img alt="Error al cargar: Clonezilla - IP del destino" src="imagenes/copiasremotas/cl08.jpg"/>
+    <p>Ahora nos solicita el puerto. Dejamos el que viene indicado por defecto (22).</p>
+    <img alt="Error al cargar: Clonezilla - puerto para la comunicación" src="imagenes/copiasremotas/cl09.jpg"/>
+    <p>A continuación nos pide un usuario que tenga permiso de escritura en el directorio de destino, que indicaremos en el siguiente paso. Es recomendable que ese usuario sea el administrador del equipo de destino. En mi caso es usuario.</p>
+    <img alt="Error al cargar: Clonezilla - usuario" src="imagenes/copiasremotas/cl10.jpg"/>
+    <p>Ahora nos preguntará en qué directorio del equipo de destino colocar la copia. Seleccionaré una carpeta del esritorio creado específicamente para ello.</p>
+    <img alt="Error al cargar: Clonezilla - directorio de destino" src="imagenes/copiasremotas/cl11.jpg"/>
+    <p>Por último antes de mandarnos al siguiente paso, las opciones de la copia, nos pedirá confirmación (escribir <i>yes</i>) y la contraseña del usuario indicado en el destino.</p>
+    <img alt="Error al cargar: Clonezilla - contraseña del usuario en el destino" src="imagenes/copiasremotas/cl12.jpg"/>
+
+    <h2>PASO 3: OPCIONES DE LA COPIA</h2>
+    <p>En esta ventana elegiremos el modo <i>Begginer</i> ya que no necesitamos en este caso las opciones de un usuario avanzado. En la siguiente ventana elegiremos <i>savedisk</i> para guardar TODO el disco, y le ponemos nombre a la copia.</p>
+    <img alt="Error al cargar: Clonezilla - tipo de copia" src="imagenes/copiasremotas/cl13.jpg"/>
+    <img alt="Error al cargar: Clonezilla -  nombre" src="imagenes/copiasremotas/cl14.jpg"/>
+    <p>Como vemos he dejado el nombre por defecto a la copia: la fecha actual. NO HAGÁIS ESTO. Yo lo hago porque realmente no me importa el nombre de la copia para este ejemplo, pero cuando la hagáis <b>además de la fecha</b> es recomendable incluir más detalles, tales como a qué disco está copiando.</p>
+    <p>Ahora elegimos la unidad a copiar. Como ya viene marcada con el asterisco, pulsaremos <i>tab</i> y aceptar para pasar a la siguiente página.</p>
+    <img alt="Error al cargar: Clonezilla - dispositivo a copiar" src="imagenes/copiasremotas/cl15.jpg"/>
+    <p>Ahora nos pedirá qué tipo de compresión usar. <b>NO CAMBIAREMOS NADA</b>. Pulsamos intro y pasamos a la siguiente</p>
+    <p>Nos preguntará si queremos comprobar el disco que se va a copiar. Yo elegiré que no por velocidad.</p>
+    <img alt="Error al cargar: Clonezilla - checkeo disco origen" src="imagenes/copiasremotas/cl16.jpg"/>
+    <p>Luego, nos pregunta si queremos comprobar la imagen, es decir, la copia realizada. Voy a elegir también que no. Tras ello si queremos si cifrar la imagen. También elijo que no.</p>
+    <img alt="Error al cargar: Clonezilla - cifrado" src="imagenes/copiasremotas/cl17.jpg"/>
+    <p>Por último, nos pregunta qué hacer tras la copia. Elijo la opción de que me dé a elegir después.</p>
+    <img alt="Error al cargar: Clonezilla - acción tras finalizar" src="imagenes/copiasremotas/cl18.jpg"/>
+    <p>Ahora comenzará la copia. Llevará un buen rato.</p>
+    <img alt="Error al cargar: Clonezilla - proceso de la copia" src="imagenes/copiasremotas/cl19.jpg"/>
+    <p>Cuando acabe, nos preguntará qué hacer a continuación, como antes indicamos.</p>
+    <img alt="Error al cargar: Clonezilla - copia finalizada" src="imagenes/copiasremotas/cl20.jpg"/>
+    <p>¡Y listo! Hemos terminado la copia.</p>
+
+   </article>
+</section>
+</body>
+</html>

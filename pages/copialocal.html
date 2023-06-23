@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "estilo.css">
+</head>
+<body>
+   <h1>COPIAS LOCALES CON CLONEZILLA</h1>
+    <p>Para realizar las copias locales usaremos el programa <i>Clonezilla</i>, una distribución de linux cuya finalidad es gestionar copias de seguridad.</p>
+    <p>Pero antes, ¿Qué es una copia local? Pues es una copia realizada desde el origen a un dispositivo conectado físicamente al origen, como un medio USB o un disco duro.</p>
+    <p>Ahora que sabemos esto, procedamos con el manual.</p>
+
+    <h2>PASO 0: CREAR MEDIO</h2>
+    <p>El paso previo no podía ser otro que crear el medio de instalación, obviamente. Si usamos Windows usaremos la aplicación rufus. Tendremos que tener un resultado similar al siguiente, pero con la diferencia de que en lugar de la iso de windows usaremos la iso de clonezilla. En dispositivo seleccionamos el USB a montar.</p>
+    <img alt="Error al cargar: rufus" src="imagenes/rufus.png"/>
+
+    <h2>PASO 1: ARRANQUE DEL MEDIO</h2>
+    <p>Primero arrancamos Clonezilla. Para ello enchufamos el USB, reinciamos la máquina y pulsamos la tecla que permite seleccionar el arranque, normalmente F2, F8 o F9, pero para estar más seguros siempre puedes pulsar ESC y acceder desde la BIOS/UEFI.</p>
+    <p>Ahora, seleccionamos la opción por defecto, la primera de todas. Después nos preguntará el idioma y la distribución del teclado. Son pasos sencillos, pero tediosos. Elegiremos el idioma que prefiramos y en cuanto a la distribución pulsaremos más habitualmente Change, ya que la distribución por defecto es el teclado americano.</p>
+    <img alt="Error al cargar: Clonezilla - idioma" src="imagenes/copiaslocales/cl01.jpg"/>
+    <img alt="Error al cargar: Clonezilla - distribución del teclado" src="imagenes/copiaslocales/cl02.jpg"/>
+    <p>En mi caso, que uso un portátil antiguo y quiero poner la distribución de teclado en español de España genérico, dejaré el teclado de PC genérico que tiene seleccionado al princpio, y en la siguiente ventana pulsaré <i>Otro</i> abajo del todo, ahora buscaré <i>Español</i>, lo seleccionaré y luego seleccionaré la distribución española que quiera.</p>
+    <img alt="Error al cargar: Clonezilla - tipo de teclado" src="imagenes/copiaslocales/cl03.jpg"/>
+    <img alt="Error al cargar: Clonezilla - idioma del teclado" src="imagenes/copiaslocales/cl04.jpg"/>
+    <p>A continuación nos pedirá sustitutos de teclas. Si no tenemos en el teclado la tecla que pide, buscaremos una alternativa de entre las opciones que nos da, y si la tenemos pues seleccionamos esa misma tecla, ya que aparece entre las opciones.</p>
+    <img alt="Error al cargar: Clonezilla - teclas especiales" src="imagenes/copiaslocales/cl05.jpg"/>
+    <p>Cuando acabemos con eso, nos dará la opción de entrar a Clonezilla, que es el modo gráfico, o hacer el proceso mediante comandos. Lo segundo sería la mejor opción, pero ya que no tenemos los conocimientos adecuados, iremos a <i>Start_Clonezilla</i>.</p>
+    <p>Ahora en la siguiente ventana nos salen muchas opciones. Son para elegir lo que queremos hacer. Ya que queremos hacer una copia del disco en otro disco distinto, elegiremos device-image.</p>
+    <img alt="Error al cargar: Clonezilla - modo" src="imagenes/copiaslocales/cl06.jpg"/>
+
+    <h2>PASO 2: ELEGIR TIPO DE COPIA Y DESTINO</h2>
+    <p>Ya que queremos hacer la copia en local, es decir, del disco duro de nuestro PC a otro que conectaremos mediante algún medio, USB en mi caso, la opción será <i>local_dev</i>. <b>Es ahora cuando conectamos el disco duro externo.</b></p>
+    <img alt="Error al cargar: Clonezilla - modo local" src="imagenes/copiaslocales/cl07.jpg"/>
+    <p>Nos aparecerá esta pantalla negra. Aquí nos lee los discos internos del PC. Pulsamos <i>ctrl+c</i> para salir y nos llevará a esta otra ventana. Esta ventana, que está llena de opciones, nos pide a qué partición de qué disco va a ir a parar la copia de seguridad. Elegiremos nuestro disco duro externo que conectamos previamente.</p>
+    <img alt="Error al cargar: Clonezilla - disco de destino" src="imagenes/copiaslocales/cl09.jpg"/>
+    <p>A continuación nos pregunta si queremos hacer un análisis del disco de destino para comprobar su integridad. Elegiré que no por velocidad, pero esta opción es en función de cada uno.</p>
+    <img alt="Error al cargar: Clonezilla - checkeo de destino" src="imagenes/copiaslocales/cl10.jpg"/>
+    <p>Ahora nos preguntará en qué directorio del disco duro colocar la copia. Como me da igual, seleccionaré salir de la exploración de directorios, pero, como antes, esto es en función de cada uno.</p>
+    <img alt="Error al cargar: Clonezilla - directorio de destino" src="imagenes/copiaslocales/cl11.jpg"/>
+
+    <h2>PASO 3: OPCIONES DE LA COPIA</h2>
+    <p>En esta ventana elegiremos el modo <i>Begginer</i> ya que no necesitamos en este caso las opciones de un usuario avanzado. En la siguiente ventana elegiremos <i>savedisk</i> para guardar TODO el disco, y le ponemos nombre a la copia.</p>
+    <img alt="Error al cargar: Clonezilla - tipo de copia" src="imagenes/copiaslocales/cl12.jpg"/>
+    <img alt="Error al cargar: Clonezilla -  nombre" src="imagenes/copiaslocales/cl13.jpg"/>
+    <p>Como vemos he dejado el nombre por defecto a la copia: la fecha actual. NO HAGÁIS ESTO. Yo lo hago porque realmente no me importa el nombre de la copia para este ejemplo, pero cuando la hagáis <b>además de la fecha</b> es recomendable incluir más detalles, tales como a qué disco está copiando.</p>
+    <p>Ahora elegimos la unidad a copiar. Como ya viene marcada con el asterisco, pulsaremos <i>tab</i> y aceptar para pasar a la siguiente página.</p>
+    <img alt="Error al cargar: Clonezilla - dispositivo a copiar" src="imagenes/copiaslocales/cl14.jpg"/>
+    <p>Ahora nos pedirá qué tipo de compresión usar. <b>NO CAMBIAREMOS NADA</b>. Pulsamos intro y pasamos a la siguiente</p>
+    <p>Nos preguntará si queremos comprobar el disco que se va a copiar. Yo elegiré que no por velocidad.</p>
+    <img alt="Error al cargar: Clonezilla - checkeo disco origen" src="imagenes/copiaslocales/cl15.jpg"/>
+    <p>Luego, nos pregunta si queremos comprobar la imagen, es decir, la copia realizada. Voy a elegir también que no. Tras ello si queremos si cifrar la imagen. También elijo que no.</p>
+    <img alt="Error al cargar: Clonezilla - cifrado" src="imagenes/copiaslocales/cl16.jpg"/>
+    <p>Por último, nos pregunta qué hacer tras la copia. Elijo la opción de que me dé a elegir después.</p>
+    <img alt="Error al cargar: Clonezilla - acción tras finalizar" src="imagenes/copiaslocales/cl17.jpg"/>
+    <p>Ahora comenzará la copia. Llevará un buen rato.</p>
+    <img alt="Error al cargar: Clonezilla - proceso de la copia" src="imagenes/copiaslocales/cl18.jpg"/>
+    <p>Cuando acabe, nos preguntará qué hacer a continuación, como antes indicamos.</p>
+    <img alt="Error al cargar: Clonezilla - copia finalizada" src="imagenes/copiaslocales/cl18.jpg"/>
+    <p>¡Y listo! Hemos terminado la copia.</p>
+
+   </article>
+</section>
+</body>
+</html>

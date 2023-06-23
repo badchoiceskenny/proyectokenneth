@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "estilo.css">
+</head>
+<body>
+   <h1>PROGRAMAS PORTABLES EN WINDOWS</h1>
+   <h2>DEFINICIÓN</h2>
+    <p>Un programa portable es un programa que tiene todos sus componentes y archivos necesarios en una única carpeta. Realmente muchos programas no portables se pueden usar así, si realizas la instalación en una localizada y la mueves por allí en algo como una unidad USB, por ejemplo, pero no es recomendable: el programa podría estar cogiendo archivos de configuración de otro lugar y al trasladarlo de ordenador se pierdan, aunque puedas mover la carpeta dentro del mismo ordenador sin que nada se rompa.</p>
+    <p>Tampoco varían los requisitos técnicos de un programa portable; como mucho varían en tamaño.</p>
+    <p>Así que, ¿cómo consigo un programa portable? Pues es bien sencillo:</p>
+    <ul>
+      <li>El programa tiene versión portable en su página web (Generalmente un archivo comprimido)</li>
+      <li>El programa tiene opción de instalarse en versión portable en su instalador.</li>
+      <li>El programa no tiene versión portable, aunque, como ya he dicho, muchos pueden desplazarse localmente dentro de la máquina sin problemas.</li>
+    </ul>
+    <h2>COMPARATIVA</h2>
+    <div>
+      <table>
+         <tr>
+            <th id="doscol">PORTABLE</th>
+            <th id="doscol">NO PORTABLE</th>
+         </tr>
+         <tr>
+            <td>
+               <ul>
+                  <li>Se puede llevar de un ordenador a otro manteniendo gran parte de la configuración</li>
+                  <li>No se realiza acceso directo normalmente</li>
+                  <li>Si no se ha realizado acceso directo tienes que abrir la carpeta y buscar el ejecutable</li>
+                  <li>En mi experiencia son más propensos a errores</li>
+               </ul>
+            </td>
+            <td>
+               <ul>
+                  <li>Más cómodos de usar</li>
+                  <li>Los ficheros de configuración y otros tantos más suelen esparcidos por el ordenador, dificultando su traspaso de un pc a otro</li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+    </div>
+    <h2>EJEMPLOS</h2>
+    <h2>WIRESHARK (EJEMPLO DE PROGRAMA PORTABLE CON DESCARGA DIRECTA)</h2>
+    <p>Primero nos dirigimos a la <a href="https://www.wireshark.org/download.html" target="_blank" rel="noopener">página web</a> de Wireshark en la sección de Descargas. Una vez allí, buscamos la opción <b>Windows Intel PortableApps</b> y hacemos click. Comenzará la descarga.</p>
+    <p>Una vez descargado lo abrimos desde el historial de descargas del navegador o desde la carpeta Descargas.</p>
+    <img alt="Error al cargar: imagen de la web de Wireshark" src="imagenes/win_portable/02.png"/>
+    <p>Una vez abierto nos dará a elegir idioma. Por defecto dejará marcado el idioma del sistema. Le damos a <i>aceptar</i> y continuamos al cliente de instalación. La primera sección es de bienvenida, así que pulsamos siguiente.</p>
+    <img alt="Error al cargar: imagen de la selección de idioma" src="imagenes/win_portable/03.png"/>
+    <img alt="Error al cargar: imagen de la portada del instalador" src="imagenes/win_portable/04.png"/>
+    <p>Ahora nos pedirá la ruta donde instalará el programa portable. Por defecto está en la carpeta donde está el instalador, así que voy a cambiarla. Hago click en <i>examinar</i> y selecciono el lugar donde quiero instalar el programa portable, que será Escritorio en mi caso.</p>
+    <img alt="Error al cargar: imagen del instalador - selección de destino con el destino predeterminado" src="imagenes/win_portable/05.png"/>
+    <img alt="Error al cargar: imagen del instalador - selección de destino con el explorador" src="imagenes/win_portable/06.png"/>
+    <p>Damos a aceptar y veremos que el destino ha cambiado. Ahora pulsamos <i>Instalar</i> y comenzará la instalación.</p>
+    <img alt="Error al cargar: imagen del instalador - selección de destino con el nuevo destino" src="imagenes/win_portable/07.png"/>
+    <p>Cuando acabe pulsamos <i>Terminar</i>, aunque podemos marcar la casilla para arrancar el programa al cerrar si queremos. Veremos ahora en nuestro destino la carpeta del programa y si entramos podremos ver un ejecutable para lanzarlo.</p>
+    <img alt="Error al cargar: imagen del escritorio con la carpeta del programa" src="imagenes/win_portable/10.png"/>
+    <img alt="Error al cargar: imagen del contenido de la carpeta del programa" src="imagenes/win_portable/11.png"/>
+
+
+    <h2>COCKATRICE (EJEMPLO DE PROGRAMA PORTABLE CON INSTALADOR DUAL)</h2>
+    <p>Al igual que con el anterior nos dirigimos a su <a href="https://cockatrice.github.io/" target="_blank" rel="noopener">página web</a> y a la izquierda, debajo del logo, elegimos Windows y comenzará la descarga del instalador. Una vez descargado lo ejecutamos desde el historial del navegador o la carpeta Descargas.</p>
+    <img alt="Error al cargar: imagen de la web de Cockatrice" src="imagenes/win_portable/13.png"/>
+    <p>La primera parte del instalador es la bienvenida, así que clickamos en <i>Next</i>. La segunda parte es el acuerdo de usuario el cual tendremos que aceptar pulsando en <i>I agree</i>. Y ahora sí podemos elegir el modo de instalación.</p>
+    <img alt="Error al cargar: imagen del instalador en la sección de modo instalación" src="imagenes/win_portable/16.png"/>
+    <p>Las opciones son: Instalaión normal e <b>Instalación portable</b>. Elegiremos esta última. Al igual que con el anterior nos pedirá el directorio de destino, el cual podremos cambiar escribiendo en la barra o seleccionando manualmente con <i>Browse</i>, exactamente igual que con Wireshark. Tras ello comenzará la instación.</p>
+    <img alt="Error al cargar: imagen del instalador pidiendo la ruta de destino" src="imagenes/win_portable/17.png"/>
+    <p>Cuando acabe tendremos la carpeta del programa en el destino, y dentro de ella veremos también el programa, solo que a diferencia de wireshark que tenía su ejecutable a parte y bien visible, este está entre los archivos de la carpeta raíz. De hecho, esto último es lo más frecuente en los programas portables.</p>
+    <img alt="Error al cargar: imagen de la carpeta del programa en el escritorio" src="imagenes/win_portable/30.png"/>
+    <img alt="Error al cargar: imagen del contenido de la carpeta" src="imagenes/win_portable/29.png"/>
+   </article>
+   </article>
+   </article>
+</section>
+</body>
+</html>
