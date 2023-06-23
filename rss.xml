@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+    <channel>
+    <!--Prólogo-->
+    <title>Software</title>
+    <link>https://badchoiceskenny.github.io/proyectokenneth/</link>
+    <description>Web con guías para instalar software de uso general en distintos Windows y Ubuntu.</description>
+    <category>Software / Ordenadores / Antivirus / Ofimática / Recuperación / Copias de seguridad</category>
+    <copyright>1º ASIR - LMSGI - 2022/2023</copyright>
+    <image>
+    <url>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/imagenes/icono.png</url>
+    <title>Software</title>
+    <link>https://badchoiceskenny.github.io/proyectokenneth/</link>
+    <width>40</width>
+    <height>40</height>
+    </image>
+    <language>es-es</language>
+    <!-- Noticias del canal -->
+
+    <item>
+    <title>Software Ofimático en Windows</title>
+    <description>
+    Una guía sobre qué Software Ofimático podemos encontrar en Windows y cómo instalarlo.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/winofimatica.html
+    </link>
+    </item>
+
+    <item>
+    <title>Antivirus en Windows</title>
+    <description>
+    Una guía sobre qué Antivirus gratuitos podemos encontrar en Windows y cómo instalarlos.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/winantivirus.html
+    </link>
+    </item>
+
+    <item>
+    <title>Programas de Recuperación en Windows</title>
+    <description>
+    Una guía sobre qué programas de recuperación gratuitos podemos encontrar en Windows y cómo instalarlos.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/winrecuperacion.html
+    </link>
+    </item>
+
+    <item>
+    <title>Software Portable en Windows</title>
+    <description>
+    Una guía sobre qué es el software portable y cómo instalarlo en Windows.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/winportable.html
+    </link>
+    </item>
+    
+    <item>
+    <title>Software Ofimático en Ubuntu</title>
+    <description>
+    Una guía sobre qué Software Ofimático podemos encontrar en Ubuntu y cómo instalarlo.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/ubuofimatica.html
+    </link>
+    </item>
+
+    <item>
+    <title>Antivirus en Ubuntu</title>
+    <description>
+    Una guía sobre qué Antivirus gratuitos podemos encontrar en Ubuntu y cómo instalarlos.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/ubuantivirus.html
+    </link>
+    </item>
+
+    <item>
+    <title>Programas de Recuperación en Ubuntu</title>
+    <description>
+    Una guía sobre qué programas de recuperación gratuitos podemos encontrar en Ubuntu y cómo instalarlos.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/uburecuperacion.html
+    </link>
+    </item>
+
+    <item>
+    <title>Software Portable en Ubuntu</title>
+    <description>
+    Una guía sobre qué es el software portable y cómo instalarlo en Ubuntu.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/ubuportable.html
+    </link>
+    </item>
+
+    <item>
+    <title>Copias de Seguridad Locales</title>
+    <description>
+    Una guía para realizar una copia de seguirdad local con Clonezilla.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/copialocal.html
+    </link>
+    </item>
+
+    <item>
+    <title>Copias de Seguridad Remotas</title>
+    <description>
+    Una guía para realizar una copia de seguirdad remota con Clonezilla usando SSH.
+    </description>
+    <link>
+    https://badchoiceskenny.github.io/proyectokenneth/pages/copiaremota.html
+    </link>
+    </item>
+    
+   
+    </channel>
+    </rss> 
